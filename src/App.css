@@ -1,0 +1,308 @@
+
+.app {
+  width: 100%;
+  overflow: hidden;
+}
+
+.navbar {
+  min-height: 80px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+}
+
+.logo {
+  font-size: 27px;
+  font-weight: 800;
+  color: #183d2b;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #65a746;
+}
+
+.nav-links,
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: #536157;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+.login-btn {
+  background: transparent;
+  color: #183d2b;
+  font-weight: 600;
+}
+
+.signup-btn,
+.primary-btn {
+  background: #326c3d;
+  color: white;
+  padding: 13px 22px;
+  border-radius: 7px;
+}
+
+.hero {
+  background: #f1f6ed;
+  padding: 85px 8%;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.eyebrow {
+  color: #5d9147;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.hero h1 {
+  color: #183d2b;
+  font-size: clamp(40px, 5vw, 65px);
+  line-height: 1.12;
+  margin: 20px 0;
+}
+
+.hero h1 span {
+  color: #6b9e4d;
+}
+
+.hero-description {
+  color: #667267;
+  max-width: 520px;
+  line-height: 1.8;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.secondary-btn {
+  background: white;
+  color: #326c3d;
+  border: 1px solid #326c3d;
+  padding: 13px 22px;
+  border-radius: 7px;
+}
+
+.hero-note {
+  margin-top: 30px;
+  color: #718071;
+  font-size: 13px;
+}
+
+.hero-visual {
+  min-height: 340px;
+  background: #dcebd2;
+  border-radius: 50% 45% 45% 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.produce-circle {
+  font-size: 145px;
+}
+
+.produce-card {
+  position: absolute;
+  bottom: 25px;
+  left: -25px;
+  background: white;
+  padding: 17px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 8px 25px #183d2b18;
+}
+
+.produce-card > span {
+  font-size: 30px;
+}
+
+.produce-card strong {
+  color: #183d2b;
+  font-size: 13px;
+}
+
+.produce-card p {
+  color: #718071;
+  font-size: 11px;
+  margin-bottom: 0;
+}
+
+.audience-section,
+.marketplace-section,
+.how-section {
+  padding: 75px 8%;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-heading h2 {
+  color: #183d2b;
+  font-size: 34px;
+  margin: 12px 0;
+}
+
+.section-heading > p:last-child {
+  color: #718071;
+}
+
+.audience-grid,
+.produce-grid,
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.audience-card,
+.product-card {
+  padding: 30px;
+  border: 1px solid #e5ebe3;
+  border-radius: 12px;
+  background: white;
+}
+
+.card-icon {
+  font-size: 40px;
+}
+
+.audience-card h3,
+.product-card h3,
+.steps-grid h3 {
+  color: #183d2b;
+}
+
+.audience-card p,
+.product-card p,
+.steps-grid p {
+  color: #718071;
+  line-height: 1.7;
+}
+
+.audience-card a {
+  color: #4d8a43;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.marketplace-section {
+  background: #f7f9f5;
+}
+
+.produce-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.product-image {
+  background: #edf4e9;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  font-size: 65px;
+}
+
+.product-card strong {
+  color: #4d8a43;
+  font-size: 13px;
+}
+
+.steps-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.steps-grid span {
+  color: #70a451;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.footer {
+  background: #183d2b;
+  color: white;
+  padding: 45px 8%;
+  text-align: center;
+}
+
+.footer .logo {
+  color: white;
+}
+
+.footer p {
+  color: #d3e0d2;
+}
+
+.footer small {
+  color: #a9c0a7;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px 5%;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .nav-actions {
+    gap: 12px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 55px 6%;
+  }
+
+  .hero-visual {
+    min-height: 250px;
+  }
+
+  .produce-card {
+    left: 0;
+  }
+
+  .audience-grid,
+  .produce-grid,
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .audience-section,
+  .marketplace-section,
+  .how-section {
+    padding: 55px 6%;
+  }
+}
